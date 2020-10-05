@@ -19,10 +19,10 @@ def setup():
 def loop():
     while True:
         GPIO.output(led_pin, GPIO.HIGH)  # make ledPin output HIGH level to turn on led
-        # print ('ledrned on >>>')     # print information on terminal
+        print ('led turned on >>>')     # print information on terminal
         time.sleep(0.1)                   # Wait for 1 second
         GPIO.output(led_pin, GPIO.LOW)   # make ledPin output LOW level to turn off led
-        # print ('led turned off <<<')
+        print ('led turned off <<<')
         time.sleep(0.1)                   # Wait for 1 second
 
 def destroy():
